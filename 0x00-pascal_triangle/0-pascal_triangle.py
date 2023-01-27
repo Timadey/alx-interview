@@ -7,7 +7,7 @@ def pascal_triangle(n):
     Pascal triangle
     """
     if n < 1:
-        return
+        return []
     triangle = [[1], [1, 1]]
     if n == 1:
         return triangle[:1]
