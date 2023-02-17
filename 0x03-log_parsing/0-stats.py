@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 import sys
 import re
 
@@ -77,4 +77,3 @@ def log_parser():
 
 if "__main__" == __name__:
     log_parser()
-    
