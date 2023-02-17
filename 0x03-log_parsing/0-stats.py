@@ -41,7 +41,8 @@ def print_all(file_size, status_codes):
 
 def log_parser():
     """
-    The main function
+    The main function. Continue to loop until the Keyboard Interrupt is
+    pressed
     """
     total_file_size = 0
     status_codes_count = {}
