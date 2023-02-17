@@ -1,10 +1,12 @@
 #!/usr/bin/python3
-import sys
-import re
 
 """
 A script that reads stdin line by line and computes metrics
 """
+
+
+import sys
+import re
 
 
 def validate_user_input(user_input: str) -> bool:
