@@ -12,7 +12,7 @@ def validate_user_input(user_input: str) -> bool:
     Validate the user_input to conform with the format
     """
     ip = r'^(\d{1,255}\.){3,3}\d{1,255} '
-    mid = r'- \[.+] "GET \/projects\/260 HTTP\/1.1" '
+    mid = r'- \[.+\] "GET \/projects\/260 HTTP\/1.1" '
     code = r'(200|301|400|401|403|404|405|500) \d+$'
     pat = ip + mid + code
     pattern = re.compile(pat)
