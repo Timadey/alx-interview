@@ -7,7 +7,7 @@ A script that reads stdin line by line and computes metrics
 """
 
 
-def validateuser_Input(user_input: str) -> bool:
+def validate_user_input(user_input: str) -> bool:
     """
     Validate the user_input to conform with the format
     """
@@ -51,7 +51,7 @@ def log_parser():
         while (True):
             user_input = sys.stdin.readline()
             loop_count += 1
-            if validateuser_Input(user_input) is None:
+            if validate_user_input(user_input) is None:
                 user_input = sys.stdin.readline()
                 continue
             status_code, file_size = get_sc_and_fs(user_input)
