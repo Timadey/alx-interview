@@ -32,11 +32,11 @@ def print_all(file_size, status_codes):
     """
     Print the current total file size and the counts of status codes
     """
-    print(f"File size: {file_size}")
+    print("File size: {}".format(file_size))
     for status_code in sorted(status_codes):
         if not status_code.isnumeric():
             pass
-        print(f"{status_code}: {status_codes.get(status_code)} ")
+        print("{}: {}".format(status_code, status_codes.get(status_code)))
 
 
 def log_parser():
